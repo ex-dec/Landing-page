@@ -52,7 +52,7 @@ body {
     padding: 15px 0px 15px;
 }
 
-.footer-bottom .footer-copy-right p {
+.footer-bottom .footer-copy-right a{
     color: #523a28;
     font-size: 16px;
     margin-left: 2%;
