@@ -1,17 +1,28 @@
 html,
 body {
     height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #fff6ef;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
     display: block;
     color: #a47551;
-    height: 85%;
+    height: 100%;
+}
+
+.container-porto {
+    display: block;
+    color: #a47551;
+    height: 88%;
 }
 
 .header-nav {
-    background: #a47551;
+    color: #212529;
 }
 
 .header-nav .header-border {
@@ -20,7 +31,7 @@ body {
 
 .header-nav .nav-brand {
     float: inline-start;
-    color: #523a28;
+    color: rgba(0, 0, 0, 0.267);
     font: bold;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
@@ -37,11 +48,14 @@ body {
 
 .header-nav .nav-item .nav-link {
     text-transform: uppercase;
-    color: #523a28;
+    color: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+}
+.header-nav .nav-item .nav-link:hover {
+    color: #de8a5e;
 }
 
 .footer-bottom {
@@ -49,7 +63,7 @@ body {
 }
 
 .footer-bottom .footer-border {
-    padding: 15px 0px 15px;
+    padding: 15px 0px;
 }
 
 .footer-bottom .footer-copy-right a{
@@ -58,13 +72,24 @@ body {
     margin-left: 2%;
 }
 
+.footer-bottom .footer-icon {
+    float: inline-end;
+}
+
+.footer-bootom .nav-lu {
+    list-style-type: none;
+    overflow: hidden;
+}
+
 .banner-background {
+    border-radius: 5px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/landing.jpg");
-    height: 75%;
+    height: 90%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 
 .banner-text {
@@ -96,6 +121,16 @@ body {
     padding: 0 10px;
 }
 
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+.col-80 {
+    float: left;
+    width: 80%;
+}
+
 .row {
     margin: 0 -5px;
 }
@@ -110,6 +145,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #fffbfb;
     border-radius: 5px;
+    height: 300px;
 }
+
