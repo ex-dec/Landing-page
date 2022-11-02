@@ -1,6 +1,6 @@
 <?php
 include 'admin/template/startConnection.php';
-$queryGetArc = 'Select * from article';
+$queryGetArc = 'Select * from article order by id desc';
 $getArc = mysqli_query($connect, $queryGetArc);
 ?>
 
@@ -18,24 +18,7 @@ $getArc = mysqli_query($connect, $queryGetArc);
 
 <body class="container">
     <!-- Header and navbar -->
-    <header id="home">
-        <nav>
-            <div class="header-nav">
-                <div class="header-border">
-                    <div class="nav-brand">
-                        <h3> Ex-dec | Exclusive for December </h3>
-                    </div>
-                    <ul class="nav-lu">
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="article.php">Article</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#porto">Portofolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include 'template/header.php'?>
     <!-- banner -->
     <div class="banner-background">
         <div class="banner-text">
@@ -70,7 +53,7 @@ $getArc = mysqli_query($connect, $queryGetArc);
     </div>
     <!-- gallery -->
     <div class="container-porto" id="porto">
-        <h1 style="text-align: center; padding: 3% 0px 2%; margin-top: 0%;">my Portofolio</h1>
+        <h1 style="text-align: center; padding: 3% 0px 2%; margin-top: 0%;">Latest article</h1>
         <div class="row">
             <?php
             $i = 1;
